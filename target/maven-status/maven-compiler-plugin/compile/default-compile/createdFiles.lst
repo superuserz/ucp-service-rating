@@ -1,0 +1,5 @@
+com\nagp\ucp\rating\repository\RatingRepository.class
+com\nagp\ucp\rating\controller\RatingController.class
+com\nagp\ucp\rating\entity\Rating.class
+com\nagp\ucp\rating\service\RatingService.class
+com\nagp\ucp\rating\UcpServiceRatingApplication.class
