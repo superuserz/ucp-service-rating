@@ -17,17 +17,17 @@ import com.nagp.ucp.rating.service.RatingService;
 @RequestMapping(value = "/rating")
 public class RatingController {
 
-    @Autowired
-    RatingService ratingService;
+	@Autowired
+	RatingService ratingService;
 
-    @GetMapping("/{serviceId}")
-    public List<Rating> getRating(@PathVariable int serviceId) {
-        return ratingService.getRatings(serviceId);
-    }
+	@GetMapping("/{serviceId}")
+	public List<Rating> getRating(@PathVariable int serviceId) {
+		return ratingService.getRatings(serviceId);
+	}
 
-    @PostMapping("/post")
-    public void postRating(@RequestParam int serviceId, @RequestParam String name, @RequestParam double rating,
-        @RequestParam String comment) {
-        ratingService.postRating(serviceId, name, rating, comment);
-    }
+	@PostMapping("/post")
+	public void postRating(@RequestParam int serviceId, @RequestParam String name, @RequestParam double rating,
+			@RequestParam String comment) {
+		ratingService.postRating(serviceId, name, rating, comment);
+	}
 }
